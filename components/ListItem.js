@@ -2,12 +2,17 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item, removeItem }) => {
   return (
     <TouchableOpacity style={styles.listItem}>
       <View style={styles.listItemView}>
         <Text style={styles.listItemText}>{item.text}</Text>
-        <AntDesign name="minuscircle" size={20} color="crimson" />
+        <AntDesign
+          name="minuscircle"
+          size={20}
+          color="crimson"
+          onPress={() => removeItem(item.id)}
+        />
       </View>
     </TouchableOpacity>
   );
