@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     height: 60,
     padding: 15,
-    backgroundColor: "darkslateblue",
+    backgroundColor: "#ffb347",
   },
   text: {
     color: "#fff",
